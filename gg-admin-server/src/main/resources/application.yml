@@ -12,3 +12,6 @@ logging:
     root: '@custom.project.log.level@'
     
  
+ggserver: 
+  port: 10001
+  websocketPath: /websocket
