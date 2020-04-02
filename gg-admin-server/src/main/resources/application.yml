@@ -1,0 +1,14 @@
+
+spring: 
+  profiles:
+    active: '@spring.profiles.active@'
+  application:
+    name: '@project.artifactId@'
+
+logging:
+  file: 
+    name: '@log.file.path@'
+  level:
+    root: '@custom.project.log.level@'
+    
+ 
