@@ -1,4 +1,4 @@
-package com.c02.config.spring;
+package com.xzcode.gg.admin.server.config.spring;
 
 import org.springframework.context.annotation.Configuration;
 

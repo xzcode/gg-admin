@@ -1,4 +1,4 @@
-package com.c02;
+package com.xzcode.gg.admin.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
