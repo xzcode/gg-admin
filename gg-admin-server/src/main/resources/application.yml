@@ -14,4 +14,4 @@ logging:
  
 ggserver: 
   port: 1528
-  websocketPath: /websocket
+  websocketPath: /websocke

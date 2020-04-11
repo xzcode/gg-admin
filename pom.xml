@@ -16,16 +16,15 @@
 
 	<properties>
 		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
-		<ggserver.version>0.1.0-SNAPSHOT</ggserver.version>
-		<ggcloud.version>0.0.1-SNAPSHOT</ggcloud.version>
-		<jdk.version>11</jdk.version>
+		<ggserver.version>0.2.0-SNAPSHOT</ggserver.version>
+		<ggcloud.version>0.2.0-SNAPSHOT</ggcloud.version>
 		<java.version>11</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- 日志等级统一配置 -->
 		<custom.project.log.level>WARN</custom.project.log.level>
 		<spring.profiles.active>dev</spring.profiles.active>
 		<log.file.path>/app/logs/${project.artifactId}/${project.artifactId}.log</log.file.path>
-		
+
 	</properties>
 
 	<repositories>
@@ -42,7 +41,6 @@
 
 	<dependencyManagement>
 		<dependencies>
-		
 			<dependency>
 				<groupId>xzcode</groupId>
 				<artifactId>ggserver-core-server</artifactId>
@@ -88,8 +86,8 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
 		</dependency>
 	</dependencies>
 
@@ -108,14 +106,14 @@
 	<build>
 		<plugins>
 			<plugin>
-	          <artifactId>maven-compiler-plugin</artifactId>
-	          <configuration>
-	            <parameters>true</parameters>
-				<verbose>true</verbose>
-				<fork>true</fork>
-				<executable>${env.JDK_11_HOME}/bin/javac</executable>
-	          </configuration>
-	        </plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<parameters>true</parameters>
+					<verbose>true</verbose>
+					<fork>true</fork>
+					<executable>${env.JDK_11_HOME}/bin/javac</executable>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 	<modules>
